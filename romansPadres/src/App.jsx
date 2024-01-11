@@ -8,6 +8,8 @@ import Specials from './Components/Specials';
 import Catering from "./Components/Catering";
 import { Route, Routes } from "react-router";
 import { Box } from "@mui/material";
+import Reviews from "./Components/Reviews";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/catering" element={<Catering />} />
           <Route path="/specials" element={<Specials />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </Box>
     </>

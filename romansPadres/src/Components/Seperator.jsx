@@ -1,8 +1,8 @@
-export default function Seperator(){
+export default function Seperator({margin}){
 
     const separatorStyle = {
         borderBottom: '5px solid #ccc',
-        margin: '10px 0', // Optional: Adjust margin as needed
+        marginBottom: margin || '2px 0', // Optional: Adjust margin as needed
         backgroundColor: "transparent"
     };
 

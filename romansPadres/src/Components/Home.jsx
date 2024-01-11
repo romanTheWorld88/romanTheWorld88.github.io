@@ -8,7 +8,6 @@ import happyPlate from '../images/happyPlate.jpg';
 import alCarbon from '../images/alCarbon.jpg';
 import papaNachos from '../images/papaNachos.jpg';
 import crepe from '../images/crepe.jpeg';
-import { red } from '@mui/material/colors';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import descriptions from "./Descriptions";
@@ -16,6 +15,7 @@ import frontRestaurant from "../images/DTLocation.png";
 import plates from "../images/plates.jpg";
 import RatingFood from "./RatingFood";
 import OrderButton from './OrderButton';
+import newSteak from '../images/stkFaj.jpg'
 import { useState } from 'react';
 
 const ExpandMore = ({ expand }) => (
@@ -42,7 +42,7 @@ const cardsData = [
   { title: 'Fajita Chicken Sandwich', description: 'Description for Card 3', image: crepe },
   { title: 'Brisket Bowl', description: 'Description for Card 3', image: brisketBowl },
   { title: 'Tacos al Carbon', description: 'Description for Card 3', image: alCarbon },
-  { title: 'Brisket Nachos', description: 'Description for Card 3', image: crepe },
+  { title: 'Brisket Nachos', description: 'Description for Card 3', image: newSteak },
     { title: 'Mix Grill Fajitas', description: 'Description for Card 3', image: crepe },
   { title: 'Steak Quesadilla', description: 'Description for Card 3', image: crepe },
   { title: 'Lime Magaritas', description: 'Description for Card 3', image: crepe },
@@ -61,7 +61,7 @@ export default function Home() {
       <Box sx={{
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "#c03f77",
+        backgroundColor: "#597EE3",
         padding: "20px",
       }}>
         

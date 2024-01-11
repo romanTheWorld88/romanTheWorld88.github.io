@@ -13,8 +13,8 @@ export default function Menu() {
         flexDirection: "column",
         alignItems: "center",
         m: 0,
-        backgroundColor: "#c03f77",
-        fontFamily: "Permanent Marker"
+        backgroundColor: "#597EE3",
+        fontFamily: "Permanent Marker",
     }}>
     <div className="white-box">
       <Typography
@@ -30,20 +30,20 @@ export default function Menu() {
                 Monday - Friday 10:30am - 3pm
         </Typography>
     </div>
-        <Box sx={{m:2, display: "flex", justifyContent:"center", flexDirection: "row", 
+        <Box sx={{m:0, display: "flex", justifyContent:"center", flexDirection: "row", 
         alignContent: "space-around", textAlign: "center"}}>
             <img src={dinnerMenuFront}></img>
             <img src={dinnerMenuBack}></img>
         </Box>
         </Box>
-        <Seperator />
+        <Seperator margin="0px"/>
         <div><Box sx={{
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
         m: 0,
-        backgroundColor: "#c03f77",
+        backgroundColor: "#597EE3",
         fontFamily: "Permanent Marker"
     }}>
         <div className="white-box">
