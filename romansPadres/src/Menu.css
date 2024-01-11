@@ -1,0 +1,8 @@
+.white-box {
+  background-color: #fff; /* White color */
+  padding-top: 3px; /* Less padding on top */
+  padding-right: 15px; /* More padding on the right */
+  padding-bottom: 3px; /* Optional: Add padding to the bottom */
+  padding-left: 15px; /* More padding on the left */  border: 1px solid #ccc; /* Optional: Add a border to the box */
+  border-radius: 10px; /* Adjust the border-radius for rounded */
+}

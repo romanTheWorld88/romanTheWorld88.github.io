@@ -1,3 +1,4 @@
+import React from 'react';
 import CssBaseline from "@mui/material/CssBaseline";
 import './App.css'
 import Navbar from './Components/Navbar';
@@ -6,22 +7,24 @@ import Menu from './Components/Menu';
 import Specials from './Components/Specials';
 import Catering from "./Components/Catering";
 import { Route, Routes } from "react-router";
+import { Box } from "@mui/material";
 
 function App() {
-  
   return (
     <>
-    <CssBaseline />
-    <Navbar />
-      <Routes>
-        <Route path = "/" element={<Home />} />
-        <Route path = "Menu" element={<Menu />} />
-        <Route path = "Catering" element={<Catering />} />
-        <Route path = "Specials" element={<Specials />} />
-
-      </Routes>
+      <CssBaseline />
+      <Box sx={{ flexGrow: 1 }}>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/catering" element={<Catering />} />
+          <Route path="/specials" element={<Specials />} />
+        </Routes>
+      </Box>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

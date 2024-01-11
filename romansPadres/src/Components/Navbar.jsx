@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
+import "../App.css";
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
@@ -36,6 +37,7 @@ export default function Navbar() {
   };
 
   return (
+    
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -90,7 +92,7 @@ export default function Navbar() {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link style={{textDecoration: "none", color: "white"}} to = {`/${page}`}>
+                    <Link style={{textDecoration: "none", color: "black"}} to = {`/${page}`}>
                     {page}
                     </Link>
                     </Typography>
@@ -119,14 +121,15 @@ export default function Navbar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+              <Typography
+                variant="h5"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ mx: 2, my: 2, color: 'white', display: 'block' }}
               >
-            <Link style={{textDecoration: "none", color: "white"}}to = {`/${page}`}>{page}
+            <Link style={{textDecoration: "none", color: "white"}} to = {`/${page}`}>{page}
             </Link>
-            </Button>
+            </Typography>
             ))}
           </Box>
 
