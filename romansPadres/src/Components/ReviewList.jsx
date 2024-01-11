@@ -26,7 +26,7 @@ export default function ReviewList(){
     return(<>
     <Box sx={{
         display: "flex", backgroundColor: '#9BAAFF', padding: 2, borderRadius: 9,
-        width: '800px', justifyContent: "center", m: 2, flexDirection: "column", textAlign: "center"
+        width: '400px', justifyContent: "center", m: 2, flexDirection: "column", textAlign: "center"
     }}>
     <h1 className=''>Reviews</h1>
         <ReviewForm />
