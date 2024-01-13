@@ -9,7 +9,13 @@ import Catering from "./Components/Catering";
 import { Route, Routes } from "react-router";
 import { Box } from "@mui/material";
 import Reviews from "./Components/Reviews";
-
+import MondaySpecials from './Components/SpecialDays/MondaySpecials';
+import TuesdaySpecials from './Components/SpecialDays/TuesdaySpecials';
+import WednesdaySpecials from './Components/SpecialDays/WednesdaySpecials';
+import ThursdaySpecials from './Components/SpecialDays/ThursdaySpecials';
+import FridaySpecials from './Components/SpecialDays/FridaySpecials';
+import SaturdaySpecials from './Components/SpecialDays/SaturdaySpecials';
+import SundaySpecials from './Components/SpecialDays/SundaySpecials';
 
 function App() {
   return (
@@ -23,7 +29,14 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/catering" element={<Catering />} />
           <Route path="/specials" element={<Specials />} />
-          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/specials/monday" element={<MondaySpecials />} />
+          <Route path="/specials/tuesday" element={<TuesdaySpecials />} />
+          <Route path="/specials/wednesday" element={<WednesdaySpecials />} />
+          <Route path="/specials/thursday" element={<ThursdaySpecials />} />
+          <Route path="/specials/friday" element={<FridaySpecials />} />
+          <Route path="/specials/saturday" element={<SaturdaySpecials />} />
+          <Route path="/specials/sunday" element={<SundaySpecials />} />
+
         </Routes>
       </Box>
     </>

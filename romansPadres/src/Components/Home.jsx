@@ -51,7 +51,7 @@ const cardsData = [
   { title: 'Happy Plate', description: findDescription('stkDescription'), image: happyPlate },
   { title: 'Fajita Chicken Sandwich', description: 'Description for Card 3', image: crepe },
   { title: 'Brisket Bowl', description: 'Description for Card 3', image: brisketBowl },
-  { title: 'Tacos al Carbon', description: findDescription('tacoAlCarbon'), image: alCarbon },
+  { title: 'Tacos al Carbon', description: findDescription('stkDescription'), image: alCarbon },
   { title: 'Ground Beef Taco', description: findDescription('oneTaco'), image: oneTaco },
   { title: 'Mix Grill Fajitas', description: 'Description for Card 3', image: crepe },
   { title: 'Steak Quesadilla', description: 'Description for Card 3', image: crepe },
