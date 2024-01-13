@@ -2,6 +2,16 @@ import React from 'react';
 import { Box, Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import CssBaseline from "@mui/material/CssBaseline";
 import stkFajitasImage from '../images/stkFajitas.png';
+import frontLights from "../images/frontRestaurant.jpg";
+import comboEnch from "../images/comboEnch.jpg";
+import comboFajitas from "../images/comboFajitas.jpg";
+import newSteakPic from "../images/newSteakPic.jpg";
+import redFish from "../images/redFish.jpg";
+import oneTaco from "../images/oneTaco.jpg";
+import sideAngle from "../images/sideAngle.jpg";
+
+
+
 import fishImage from '../images/grilledFishSkillet.jpeg';
 import brisketBowl from '../images/brisketBowl.jpg';
 import happyPlate from '../images/happyPlate.jpg';
@@ -32,18 +42,18 @@ const findDescription = (variable) => {
 </style>
 
 const cardsData = [
-  { title: 'Steak Fajitas', description: findDescription('stkDescription'), image: stkFajitasImage},
+  { title: 'Steak Fajitas', description: findDescription('stkDescription'), image: newSteakPic},
   { title: 'Red Fish Tacos', description: findDescription('fishTacosDesc'), image: crepe },
-  { title: 'Red Fish Filet', description: findDescription('fishFiletDesc'), image: fishImage },
-  { title: 'Ground Beef Enchiladas', description: findDescription('stkDescription'), image: crepe },
+  { title: 'Red Fish Filet', description: findDescription('fishFiletDesc'), image: redFish },
+  { title: 'Ground Beef Enchiladas', description: findDescription('stkDescription'), image: comboEnch },
   { title: 'Steak Tampicana', description: findDescription('stkDescription'), image: crepe },
   { title: 'Papa Supreme Nachos', description: findDescription('papaNachosDesc'), image: papaNachos },
   { title: 'Happy Plate', description: findDescription('stkDescription'), image: happyPlate },
   { title: 'Fajita Chicken Sandwich', description: 'Description for Card 3', image: crepe },
   { title: 'Brisket Bowl', description: 'Description for Card 3', image: brisketBowl },
-  { title: 'Tacos al Carbon', description: 'Description for Card 3', image: alCarbon },
-  { title: 'Brisket Nachos', description: 'Description for Card 3', image: newSteak },
-    { title: 'Mix Grill Fajitas', description: 'Description for Card 3', image: crepe },
+  { title: 'Tacos al Carbon', description: findDescription('tacoAlCarbon'), image: alCarbon },
+  { title: 'Ground Beef Taco', description: findDescription('oneTaco'), image: oneTaco },
+  { title: 'Mix Grill Fajitas', description: 'Description for Card 3', image: crepe },
   { title: 'Steak Quesadilla', description: 'Description for Card 3', image: crepe },
   { title: 'Lime Magaritas', description: 'Description for Card 3', image: crepe },
   { title: 'Watermelon Margarita', description: 'Description for Card 3', image: crepe },
@@ -66,9 +76,9 @@ export default function Home() {
       }}>
         
         <Grid container spacing={2} justifyContent="center">
-        <img src={stkFajitasImage} alt="" width="550" height= "500"/>
-        <img src={frontRestaurant} alt="" width="550" height= "500"/>
-        <img src={plates} alt="" width="550" height= "500"/>
+        <img src={frontLights} alt="" width="550" height= "500"/>
+        <img src={comboFajitas} alt="" width="550" height= "500"/>
+        <img src={sideAngle} alt="" width="550" height= "500"/>
         
           {cardsData.map((card, index) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
@@ -76,7 +86,7 @@ export default function Home() {
                 <CardMedia
                   component="img"
                   alt={card.title}
-                  height="240"
+                  height="340"
                   image={card.image}
                 />
                 <CardContent>

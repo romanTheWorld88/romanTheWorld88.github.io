@@ -20,9 +20,10 @@ const descriptions = [
       sour cream, guacamole, pico de gallo, and topped with queso. Sub ground beef with steak or brisket if wanted.`,
   },
   {
-    variable: "description5",
+    variable: "oneTaco",
     description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      `Delicious crispy ground beef taco, with lettuce, tomatos, and cheese. Taco plate will come with three tacos and a side
+      of rice and soup`,
   },
   // Add more descriptions as needed
 ];
