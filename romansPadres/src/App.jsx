@@ -29,6 +29,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/catering" element={<Catering />} />
           <Route path="/specials" element={<Specials />} />
+          <Route path="/reviews" element={<Reviews />} />
           <Route path="/specials/monday" element={<MondaySpecials />} />
           <Route path="/specials/tuesday" element={<TuesdaySpecials />} />
           <Route path="/specials/wednesday" element={<WednesdaySpecials />} />

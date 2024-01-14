@@ -9,20 +9,19 @@ import newSteakPic from "../images/newSteakPic.jpg";
 import redFish from "../images/redFish.jpg";
 import oneTaco from "../images/oneTaco.jpg";
 import sideAngle from "../images/sideAngle.jpg";
-
-
-
-import fishImage from '../images/grilledFishSkillet.jpeg';
+import brisketBowl2 from "../images/brisketBowlNew.jpg";
+import brisketTacos from "../images/brisketTacos.jpg";
+import chickenTenders from "../images/chickenTenders.jpg";
+import cknWrap from "../images/cknWrap.jpg";
+import grilledVegies from "../images/grilledVegies.jpg";
+import shrimpBowl from "../images/shrimpBowl.jpg";
+import stkNachos from '../images/stkNachos.jpg';
 import brisketBowl from '../images/brisketBowl.jpg';
 import happyPlate from '../images/happyPlate.jpg';
 import alCarbon from '../images/alCarbon.jpg';
 import papaNachos from '../images/papaNachos.jpg';
 import crepe from '../images/crepe.jpeg';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import descriptions from "./Descriptions";
-import frontRestaurant from "../images/DTLocation.png";
-import plates from "../images/plates.jpg";
 import RatingFood from "./RatingFood";
 import OrderButton from './OrderButton';
 import newSteak from '../images/stkFaj.jpg'
@@ -43,22 +42,22 @@ const findDescription = (variable) => {
 
 const cardsData = [
   { title: 'Steak Fajitas', description: findDescription('stkDescription'), image: newSteakPic},
-  { title: 'Red Fish Tacos', description: findDescription('fishTacosDesc'), image: crepe },
+  { title: 'Chicken Lettuce Wraps', description: findDescription('fishTacosDesc'), image: cknWrap },
   { title: 'Red Fish Filet', description: findDescription('fishFiletDesc'), image: redFish },
-  { title: 'Ground Beef Enchiladas', description: findDescription('stkDescription'), image: comboEnch },
-  { title: 'Steak Tampicana', description: findDescription('stkDescription'), image: crepe },
-  { title: 'Papa Supreme Nachos', description: findDescription('papaNachosDesc'), image: papaNachos },
+  { title: 'Shrimp Bowl', description: findDescription('stkDescription'), image: shrimpBowl },
+  { title: 'Brisket Bowl', description: findDescription('stkDescription'), image: brisketBowl2 },
+  { title: 'Steak Nachos', description: findDescription('papaNachosDesc'), image: stkNachos },
   { title: 'Happy Plate', description: findDescription('stkDescription'), image: happyPlate },
-  { title: 'Fajita Chicken Sandwich', description: 'Description for Card 3', image: crepe },
-  { title: 'Brisket Bowl', description: 'Description for Card 3', image: brisketBowl },
+  { title: 'Brisket Tacos', description: 'Description for Card 3', image: brisketTacos },
+  { title: 'Brisket Bowl', description: 'Description for Card 3', image: cknWrap },
   { title: 'Tacos al Carbon', description: findDescription('stkDescription'), image: alCarbon },
   { title: 'Ground Beef Taco', description: findDescription('oneTaco'), image: oneTaco },
-  { title: 'Mix Grill Fajitas', description: 'Description for Card 3', image: crepe },
-  { title: 'Steak Quesadilla', description: 'Description for Card 3', image: crepe },
-  { title: 'Lime Magaritas', description: 'Description for Card 3', image: crepe },
-  { title: 'Watermelon Margarita', description: 'Description for Card 3', image: crepe },
+  { title: 'Grilled Vegetables', description: 'Description for Card 3', image: grilledVegies },
+  { title: 'Combination Enchiladas', description: 'Description for Card 3', image: comboEnch },
+  { title: 'Chicken Tenders', description: 'Description for Card 3', image: chickenTenders },
+  { title: 'Papa Supreme Nachos', description: 'Description for Card 3', image: papaNachos },
   { title: 'Nutella Crepe', description: 'Description for Card 3', image: crepe },
-  { title: 'Sopapillas', description: 'Description for Card 3', image: crepe },
+  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
 
 
 

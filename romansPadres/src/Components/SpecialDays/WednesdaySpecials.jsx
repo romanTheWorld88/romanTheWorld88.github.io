@@ -31,14 +31,57 @@ export default function WednesdaySpecials() {
   );
 }
 
-  return (
-    <React.Fragment>
+return (
+  <React.Fragment>
       <CssBaseline />
+      <Box sx={{
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "#597EE3",
+        padding: "20px",
+      }}>
       <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#651ee1', height: '100vh' }}>
+        <Box sx={{ m: 1, alignItems: "center", bgcolor: 'white', height: '5vh' }}>
             <ColorTabs />    
         </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '18vh', borderRadius: '12px', m: 5 }}>
+            <Typography variant="h2" align="center" gutterBottom>
+              Wednesday Specials
+            </Typography>
+        </Box>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
+            <Typography variant="h3" align="center" gutterBottom>
+              Food Specials
+            </Typography>
+            <br/>
+            <Typography variant="h4" align="center" gutterBottom>
+              Kids eat free. 
+            </Typography>
+            <Typography variant="h4" align="center" gutterBottom>
+              Soup and Salad Combination Meal 
+            </Typography>
+            <Typography variant="h6" align="center" gutterBottom>
+            Combo of your choice:
+              Papa Salad or Taco Salad with any meat (+$2.00 for Shrimp)
+              TOGETHER WITH
+              A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
+              </Typography>
+            <Typography variant="h5" align="center" gutterBottom>
+              Try this for only $10.99!
+            </Typography>
+        </Box>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
+            <Typography variant="h3" align="center" gutterBottom>
+              Drink Specials
+            </Typography>
+            <Typography variant="h4" align="center" gutterBottom>
+              16 oz Rocks or Frozen House Margarita for only $5.75! 
+            </Typography> <Typography variant="h4" align="center" gutterBottom>
+              Kids eat free. 
+            </Typography>
+        </Box>
       </Container>
+      </Box>
     </React.Fragment>
-  );
+);
 }

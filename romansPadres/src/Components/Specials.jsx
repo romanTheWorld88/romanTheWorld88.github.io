@@ -13,7 +13,7 @@ export default function Specials() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#819e61', height: '12vh' }}>
+        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '12vh' }}>
             <Typography variant="h5" align="center" gutterBottom>
           Choose Day
         </Typography>
