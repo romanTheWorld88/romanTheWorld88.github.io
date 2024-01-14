@@ -41,43 +41,66 @@ return (
         padding: "20px",
       }}>
       <Container maxWidth="sm">
-        <Box sx={{ m: 1, alignItems: "center", bgcolor: 'white', height: '5vh' }}>
+        <Container maxWidth="sm">
+        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
             <ColorTabs />    
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '18vh', borderRadius: '12px', m: 5 }}>
-            <Typography variant="h2" align="center" gutterBottom>
+      </Container>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '18vh', borderRadius: '12px', m: 5 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Wednesday Specials
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '75vh', borderRadius: '12px', m: 0 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
             <br/>
-            <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Fajita Wednesday
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              Soup and Salad Combination Meal 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              4pm - 9pm
             </Typography>
-            <Typography variant="h6" align="center" gutterBottom>
-            Combo of your choice:
-              Papa Salad or Taco Salad with any meat (+$2.00 for Shrimp)
-              TOGETHER WITH
-              A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
-              </Typography>
-            <Typography variant="h5" align="center" gutterBottom>
-              Try this for only $10.99!
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                        Half Off All Fajitas For One</Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Chicken Fajitas ($11.50)
             </Typography>
+             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Steak Fajitas ($12.50)
+            </Typography>
+
+                <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Mix Grill ($18.00)
+                </Typography>
+                <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                All fajitas come witha a setup plate on the side, as well as the meat, grilled onions, and fresh tortillas. 
+                </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '65vh', borderRadius: '12px', m: 2 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              16 oz Rocks or Frozen House Margarita for only $5.75! 
-            </Typography> <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+                Pitcher Margarita Day
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              1/2 Price All Pitchers of Margaritas
+            </Typography> 
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              House: $22.00
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Top Shelf: $34.00
+            </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Flavor: $24.00
+            </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Happy Hour 3pm - 7pm
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              12 oz House or Strawberry Margarita for $4.00
             </Typography>
         </Box>
       </Container>

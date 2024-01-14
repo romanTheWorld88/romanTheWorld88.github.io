@@ -58,27 +58,34 @@ export default function ColorTabs() {
     <Link to="/specials/tuesday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
       Tuesday
     </Link>
-  } href="/specials/monday" />
+  } href="/specials/tuesday" />
   <LinkTab label={
     <Link to="/specials/wednesday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
       Wednesday
     </Link>
+    
+  } href="/specials/wednesday" />
+  <LinkTab label={
+    <Link to="/specials/thursday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Thursday
+    </Link>
+    
   } href="/specials/thursday" />
   <LinkTab label={
     <Link to="/specials/friday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
       Friday
     </Link>
-  } href="/specials/monday" />
+  } href="/specials/friday" />
   <LinkTab label={
     <Link to="/specials/saturday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
       Saturday
     </Link>
-  } href="/specials/sunday" />
+  } href="/specials/saturday" />
   <LinkTab label={
-    <Link to="/specials/monday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+    <Link to="/specials/sunday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
       Sunday
     </Link>
-  } href="/specials/monday" />
+  } href="/specials/sunday" />
 
       </Tabs>
     </Box>

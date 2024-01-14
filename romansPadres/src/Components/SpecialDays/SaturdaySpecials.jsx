@@ -41,12 +41,14 @@ return (
         padding: "20px",
       }}>
       <Container maxWidth="sm">
-        <Box sx={{ m: 1, alignItems: "center", bgcolor: '#CF30AC', height: '5vh' }}>
+        <Container maxWidth="sm">
+        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
             <ColorTabs />    
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '12vh', borderRadius: '12px', m: 5 }}>
-            <Typography variant="h2" align="center" gutterBottom>
-              Monday Specials
+      </Container>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '18vh', borderRadius: '12px', m: 5 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
+              Saturday Specials
             </Typography>
         </Box>
         <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>

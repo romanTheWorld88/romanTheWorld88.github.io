@@ -7,7 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
-
+import peppersImage from '../../images/peppers2.jpg';
 
 export default function MondaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -36,49 +36,64 @@ export default function MondaySpecials() {
     <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative',
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",
         padding: "20px",
       }}>
       <Container maxWidth="sm">
-        <Box sx={{ m: 1, alignItems: "center", bgcolor: '#CF30AC', height: '5vh' }}>
+        <Container maxWidth="sm">
+        <Box sx={{ alignItems: "center", bgcolor: '#592EE3', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
             <ColorTabs />    
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '12vh', borderRadius: '12px', m: 5 }}>
-            <Typography variant="h2" align="center" gutterBottom>
+      </Container>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Monday Specials
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '85vh', borderRadius: '12px', m: 2 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
             <br/>
-            <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Kids Eat Free 
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              Soup and Salad Combination Meal 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Soup & Salad Combination Meal 
             </Typography>
-            <Typography variant="h6" align="center" gutterBottom>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
             Combo of your choice:
               Papa Salad or Taco Salad with any meat (+$2.00 for Shrimp)
-              TOGETHER WITH
-              A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
+                <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                AND</Typography>
+               <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom></Typography>A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
               </Typography>
-            <Typography variant="h5" align="center" gutterBottom>
-              Try this for only $10.99!
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h4" align="center" gutterBottom>
+              Try this for only $12.99!
             </Typography>
         </Box>
         <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+                Margarita Monday
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
               16 oz Rocks or Frozen House Margarita for only $5.75! 
-            </Typography> <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            </Typography> 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Happy Hour 3pm - 7pm
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              12 oz House or Strawberry Margarita for $4.00
             </Typography>
         </Box>
       </Container>

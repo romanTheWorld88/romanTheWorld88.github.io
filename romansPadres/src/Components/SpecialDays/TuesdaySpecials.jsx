@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
+import peppersImage from '../../images/peppersBackground.jpg';
 
 export default function FridaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -35,49 +36,80 @@ return (
   <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative',
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",
         padding: "20px",
       }}>
       <Container maxWidth="sm">
-        <Box sx={{ m: 1, alignItems: "center", bgcolor: 'white', height: '5vh' }}>
+        <Container maxWidth="sm">
+        <Box sx={{ alignItems: "center", bgcolor: '#592EE3', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
+        
             <ColorTabs />    
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '12vh', borderRadius: '12px', m: 5 }}>
-            <Typography variant="h2" align="center" gutterBottom>
+      </Container>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Tuesday Specials
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '100vh', borderRadius: '12px', m: 0 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
             <br/>
-            <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Original Taco Tuesday
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              Soup and Salad Combination Meal 
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                        A La Carte Taco Special (Single Taco)</Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Ground Beef ($2.00)
             </Typography>
-            <Typography variant="h6" align="center" gutterBottom>
-            Combo of your choice:
-              Papa Salad or Taco Salad with any meat (+$2.00 for Shrimp)
-              TOGETHER WITH
-              A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
+             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Chicken Ranchero ($2.00)
+            </Typography>
+
+                <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Chicken Fajita Taco ($3.00)
+                </Typography>
+                <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Fajita Steak Taco ($3.25),
+                </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Fish or Shrimp ($3.75)
+                </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Taco y Tequila Special 
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+            Get 3 Tacos and a 16 oz. Margarita for only $15.00!
               </Typography>
-            <Typography variant="h5" align="center" gutterBottom>
-              Try this for only $10.99!
+              <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+            Updrade to Grilled Chicken ($16.00), Fajita Steak ($16.50), or Fish / Shrimp ($17.50)
+              </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h4" align="center" gutterBottom>
+              Try this for only $15.00!
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 1 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              16 oz Rocks or Frozen House Margarita for only $5.75! 
-            </Typography> <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+                Taco and Tequila Tuesday
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Get a 16 oz Margarita when you order any 3 tacos! 
+            </Typography> 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Happy Hour 3pm - 7pm
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              12 oz House or Strawberry Margarita for $4.00
             </Typography>
         </Box>
       </Container>

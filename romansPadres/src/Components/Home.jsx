@@ -58,6 +58,9 @@ const cardsData = [
   { title: 'Papa Supreme Nachos', description: 'Description for Card 3', image: papaNachos },
   { title: 'Nutella Crepe', description: 'Description for Card 3', image: crepe },
   { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
+  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
+  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
+  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
 
 
 
@@ -67,8 +70,23 @@ const cardsData = [
 export default function Home() {
   return (
     <CssBaseline>
-      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif" }}>
+      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginBottom: '-25px' }}>
+             <Typography sx={{fontFamily: "'Oleo Script Swash Caps', system-ui"}} variant="h1" align="center" gutterBottom>
+              Mis Padres
+            </Typography>
+            
+        </Grid>
+         <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-65px' }}>
+             <Typography sx={{fontFamily: "'Oleo Script Swash Caps', system-ui"}} variant="h1" align="center" gutterBottom>
+              Mexican Grill
+            </Typography>
+            
+        </Grid>
+      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-65px' }}>
             <h2>225-313-3742</h2>
+        </Grid>
+        <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '0px', fontFamily: "'Lemon', serif", marginTop: '-45px' }}>
+            <h2>13424 LA-73</h2>
         </Grid>
       <Box sx={{
         display: "flex",
@@ -120,7 +138,20 @@ export default function Home() {
           ))}
           </Grid>
         </Grid>
+        
       </Box>
+      <Box sx={{
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "#597EE3",
+        padding: "20px",
+      }}>
+                    <OrderButton />
+                    </Box>
+ <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif" }}>
+          <h2>225-313-3742 | 13424 Hwy 73</h2>
+            
+        </Grid>
     </CssBaseline>
   );
 }

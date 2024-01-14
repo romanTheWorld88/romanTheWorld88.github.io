@@ -12,14 +12,21 @@ export default function Specials() {
   return (
     <React.Fragment>
       <CssBaseline />
+      <Box sx={{
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "#597EE3",
+        padding: "20px",
+      }}>
       <Container maxWidth="sm">
         <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '18vh', borderRadius: '15px', overflow: 'hidden'}}>
-        <Typography sx={{m: 2, fontFamily: "'Lemon', serif", color: 'white'}} variant="h2" component="div" textAlign="center" fontFamily="'Kaushan Script', cursive">
+        {/* <Typography sx={{m: 2, fontFamily: "'Lemon', serif", color: 'white'}} variant="h2" component="div" textAlign="center" fontFamily="'Kaushan Script', cursive">
                     Day
-                  </Typography>
+                  </Typography> */}
             <ColorTabs />    
         </Box>
       </Container>
+      </Box>
     </React.Fragment>
   );
 }
