@@ -13,10 +13,10 @@ export default function Specials() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '12vh' }}>
-            <Typography variant="h5" align="center" gutterBottom>
-          Choose Day
-        </Typography>
+        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '18vh', borderRadius: '15px', overflow: 'hidden'}}>
+        <Typography sx={{m: 2, fontFamily: "'Lemon', serif", color: 'white'}} variant="h2" component="div" textAlign="center" fontFamily="'Kaushan Script', cursive">
+                    Day
+                  </Typography>
             <ColorTabs />    
         </Box>
       </Container>

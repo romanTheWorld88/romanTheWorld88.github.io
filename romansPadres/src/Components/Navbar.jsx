@@ -50,7 +50,7 @@ export default function Navbar() {
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: "'Lemon', serif",
               fontWeight: 700,
               letterSpacing: '.3rem',
               color: 'inherit',
@@ -60,7 +60,7 @@ export default function Navbar() {
             Mis Padres Mexican
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, fontFamily: "'Lemon', serif" }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -91,14 +91,14 @@ export default function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
+                  <Typography textAlign="center" sx={{fontFamily: "'Lemon', serif"}}f>
                     <Link style={{textDecoration: "none", color: "black"}} to = {`/${page}`}>
                     {page}
                     </Link>
                     </Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> 
           </Box>
           <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
@@ -125,7 +125,7 @@ export default function Navbar() {
                 variant="h5"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ mx: 2, my: 2, color: 'white', display: 'block' }}
+                sx={{ mx: 2, my: 2, color: 'white', display: 'block', fontFamily: "'Lemon', serif" }}
               >
             <Link style={{textDecoration: "none", color: "white"}} to = {`/${page}`}>{page}
             </Link>

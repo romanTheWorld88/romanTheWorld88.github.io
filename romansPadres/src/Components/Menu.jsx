@@ -2,6 +2,9 @@ import { Box, Typography } from "@mui/material"
 import dinnerMenuFront from "../images/menuFront.png";
 import dinnerMenuBack from "../images/menuBack.png";
 import Seperator from "./Seperator";
+import lunchFront from "../images/lunchFront.png";
+import lunchBack from "../images/lunchBack.png";
+
 import "../Menu.css";
 
 export default function Menu() {
@@ -32,8 +35,8 @@ export default function Menu() {
     </div>
         <Box sx={{m:0, display: "flex", justifyContent:"center", flexDirection: "row", 
         alignContent: "space-around", textAlign: "center"}}>
-            <img src={dinnerMenuFront}></img>
-            <img src={dinnerMenuBack}></img>
+            <img src={lunchFront}></img>
+            <img src={lunchBack}></img>
         </Box>
         </Box>
         <Seperator margin="0px"/>

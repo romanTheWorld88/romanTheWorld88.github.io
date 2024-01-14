@@ -67,6 +67,9 @@ const cardsData = [
 export default function Home() {
   return (
     <CssBaseline>
+      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif" }}>
+            <h2>225-313-3742</h2>
+        </Grid>
       <Box sx={{
         display: "flex",
         justifyContent: "center",
@@ -74,11 +77,22 @@ export default function Home() {
         padding: "20px",
       }}>
         
+    
         <Grid container spacing={2} justifyContent="center">
         <img src={frontLights} alt="" width="550" height= "500"/>
         <img src={comboFajitas} alt="" width="550" height= "500"/>
         <img src={sideAngle} alt="" width="550" height= "500"/>
+
         
+        <Box sx={{
+              display: "flex",
+              justifyContent: "center",
+              backgroundColor: "#597EE3",
+              padding: "80px",
+            }}>
+              <OrderButton />
+        </Box>
+        <Grid container spacing={2} justifyContent="center">
           {cardsData.map((card, index) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
               <Card>
@@ -89,10 +103,10 @@ export default function Home() {
                   image={card.image}
                 />
                 <CardContent>
-                  <Typography variant="h4" component="div" textAlign="center" fontFamily="'Kaushan Script', cursive">
+                  <Typography sx={{m: -1, fontFamily: "'Lemon', serif"}} variant="h4" component="div" textAlign="center" fontFamily="'Kaushan Script', cursive">
                     {card.title}
                   </Typography>
-                  <Typography variant="body1" color="text.secondary">
+                  <Typography sx={{m: 1, fontFamily: "'Lemon', serif"}} variant="body1" color="text.secondary">
                     {card.description}
                   </Typography>
                   <Box>
@@ -101,8 +115,10 @@ export default function Home() {
                   </Box>
                 </CardContent>
               </Card>
+              
             </Grid>
           ))}
+          </Grid>
         </Grid>
       </Box>
     </CssBaseline>

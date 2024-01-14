@@ -2,6 +2,10 @@ import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { Typography } from '@mui/material';
+import Link from '@mui/material/Link';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 export default function ColorTabs() {
   const [value, setValue] = React.useState('one');
@@ -9,6 +13,10 @@ export default function ColorTabs() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const changeDay = () => {
+    console.log("Going to day1..")
+  }
 
   function LinkTab(props) {
   return (
@@ -27,23 +35,52 @@ export default function ColorTabs() {
 }
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ m: 1, width: '100%', display: 'flex' }}>
       <Tabs
-  variant="scrollable"
-  scrollButtons="auto"
-  allowScrollButtonsMobile
-  aria-label="scrollable auto tabs example"
-  sx={{fontWeight: 'bold' }}
->
-  <LinkTab label="Monday" href="/specials/monday" />
-  <LinkTab label="Tuesday" href="/specials/Tuesday" />
-  <LinkTab label="Wednesday" href="/specials/Wednesday" />
-  <LinkTab label="Thursday" href="/specials/Thursday" />
-  <LinkTab label="Friday" href="/specials/Friday" />
-  <LinkTab label="Saturday" href="/specials/Saturday" />
-  <LinkTab label="Sunday" href="/specials/Sunday" />
+          variant="scrollable"
+          scrollButtons="auto"
+          allowScrollButtonsMobile
+          aria-label="scrollable auto tabs example"
+          sx={{fontWeight: 'bold' }}
+      >
+     {/* <Tab
+  label={
+    <Link to="/specials/monday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Monday
+    </Link>
+  }/>  */}
+    <LinkTab label={
+    <Link to="/specials/monday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Monday
+    </Link>
+  } href="/specials/monday" />
+  <LinkTab label={
+    <Link to="/specials/tuesday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Tuesday
+    </Link>
+  } href="/specials/monday" />
+  <LinkTab label={
+    <Link to="/specials/wednesday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Wednesday
+    </Link>
+  } href="/specials/thursday" />
+  <LinkTab label={
+    <Link to="/specials/friday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Friday
+    </Link>
+  } href="/specials/monday" />
+  <LinkTab label={
+    <Link to="/specials/saturday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Saturday
+    </Link>
+  } href="/specials/sunday" />
+  <LinkTab label={
+    <Link to="/specials/monday" style={{ m: 2, fontFamily: "'Lemon', serif", color: 'white' }}>
+      Sunday
+    </Link>
+  } href="/specials/monday" />
 
-</Tabs>
+      </Tabs>
     </Box>
   );
 }
