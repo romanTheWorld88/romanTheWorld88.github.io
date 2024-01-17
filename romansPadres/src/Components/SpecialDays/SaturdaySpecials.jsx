@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
+import peppersImage from '../../images/peppers3.jpg';
 
 export default function SaturdaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -35,6 +36,10 @@ return (
   <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative', 
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",
@@ -51,35 +56,46 @@ return (
               Saturday Specials
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '120vh', borderRadius: '12px', m: -4 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
             <br/>
-            <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Sampler Saturday
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              Soup and Salad Combination Meal 
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                        Discounted sampler platers. </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Selecta Dinner for $13.99!
+            </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Comes with one cheese enchilada, one ground beef enchilada, one ground beef taco, chicken flautas, guacamole, pico de gallo, and rice and beans
             </Typography>
-            <Typography variant="h6" align="center" gutterBottom>
-            Combo of your choice:
-              Papa Salad or Taco Salad with any meat (+$2.00 for Shrimp)
-              TOGETHER WITH
-              A cup of Soup: Creamy Tortilla Soup, Chicken and Vegetable Soup, or Charro Bean Soup.
-              </Typography>
-            <Typography variant="h5" align="center" gutterBottom>
-              Try this for only $10.99!
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Buffalo Chicken Nachos
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Grilled fajita chicken on top of fresh tortilla chips, with jalepenos, house buffalo sauce, cilantro, and queso. 
+            </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Nutella Crepe
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                ($8.50) Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 2 }}>
-            <Typography variant="h3" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '45vh', borderRadius: '12px', m: 6 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
-            <Typography variant="h4" align="center" gutterBottom>
-              16 oz Rocks or Frozen House Margarita for only $5.75! 
-            </Typography> <Typography variant="h4" align="center" gutterBottom>
-              Kids eat free. 
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+                Premium Margarita Day
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Discounted Premium Margaritas
+            </Typography> 
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Try our fresh premium margarita with Los Altos Tequila and Gran Marnier for only $15.00.
             </Typography>
         </Box>
       </Container>

@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
+import peppersImage from '../../images/peppers2.jpg';
 
 export default function FridaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -35,6 +36,10 @@ return (
   <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative',
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",

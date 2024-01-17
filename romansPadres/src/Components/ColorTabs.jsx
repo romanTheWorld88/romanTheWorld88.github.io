@@ -41,7 +41,10 @@ export default function ColorTabs() {
           scrollButtons="auto"
           allowScrollButtonsMobile
           aria-label="scrollable auto tabs example"
-          sx={{fontWeight: 'bold' }}
+          sx={{fontWeight: 'bold', 
+            '@media (max-width: 600px)': {
+            flexDirection: 'column',
+          }, }}
       >
      {/* <Tab
   label={

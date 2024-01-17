@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
+import peppersImage from '../../images/peppers3.jpg';
 
 export default function WednesdaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -35,6 +36,10 @@ return (
   <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative', 
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",
@@ -42,11 +47,11 @@ return (
       }}>
       <Container maxWidth="sm">
         <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
+        <Box sx={{ alignItems: "center", bgcolor: '#597EE3', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
             <ColorTabs />    
         </Box>
       </Container>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '18vh', borderRadius: '12px', m: 5 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Wednesday Specials
             </Typography>

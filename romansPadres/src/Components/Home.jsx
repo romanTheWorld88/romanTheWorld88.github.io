@@ -16,7 +16,11 @@ import cknWrap from "../images/cknWrap.jpg";
 import grilledVegies from "../images/grilledVegies.jpg";
 import shrimpBowl from "../images/shrimpBowl.jpg";
 import stkNachos from '../images/stkNachos.jpg';
+import stkTacos3 from '../images/stkTacos.jpg';
 import brisketBowl from '../images/brisketBowl.jpg';
+import limeRita from "../images/limeRita.jpg";
+import coronarita from "../images/coronarita.jpg";
+import flautas from "../images/flautas.jpg";
 import happyPlate from '../images/happyPlate.jpg';
 import alCarbon from '../images/alCarbon.jpg';
 import papaNachos from '../images/papaNachos.jpg';
@@ -57,9 +61,9 @@ const cardsData = [
   { title: 'Chicken Tenders', description: 'Description for Card 3', image: chickenTenders },
   { title: 'Papa Supreme Nachos', description: 'Description for Card 3', image: papaNachos },
   { title: 'Nutella Crepe', description: 'Description for Card 3', image: crepe },
-  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
-  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
-  { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
+  { title: 'Lime Margarita', description: 'Description for Card 3', image: limeRita },
+  { title: 'Chicken Flautas', description: 'Description for Card 3', image: flautas },
+  { title: 'Steak Tacos', description: 'Description for Card 3', image: stkTacos3 },
   { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
 
 
