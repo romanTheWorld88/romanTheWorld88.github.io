@@ -7,6 +7,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import ColorTabs from '../ColorTabs';
+import peppersImage from '../../images/peppers3.jpg';
 
 export default function SundaySpecials() {
   const [value, setValue] = React.useState('one');
@@ -35,6 +36,10 @@ return (
   <React.Fragment>
       <CssBaseline />
       <Box sx={{
+        position: 'relative', 
+        backgroundImage: `url(${peppersImage})`,
+        backgroundSize: 'auto',
+        backgroundPosition: 'center',
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#597EE3",
@@ -42,11 +47,11 @@ return (
       }}>
       <Container maxWidth="sm">
         <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#0aadf5', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '7vh', borderRadius: '12px', m: 5 }}>
             <ColorTabs />    
         </Box>
       </Container>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#CF30AC', height: '18vh', borderRadius: '12px', m: 5 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Sunday Specials
             </Typography>
@@ -72,7 +77,7 @@ return (
                 Grilled Red Fish with Vegetables ($14.50)
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Buffalo Chicken Nachos
+              Buffalo Chicken Nachos $15
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
                 Grilled fajita chicken on top of fresh tortilla chips, with jalepenos, house buffalo sauce, cilantro, and queso. 
@@ -84,7 +89,7 @@ return (
                 ($8.50) Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '45vh', borderRadius: '12px', m: 6 }}>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '75vh', borderRadius: '12px', m: 6 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
@@ -96,6 +101,17 @@ return (
             </Typography> 
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
               Try our fresh premium margarita with Los Altos Tequila and Gran Marnier for only $15.00.
+            </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Discounted Pitchers of Margaritas
+            </Typography> 
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              House: $25.50
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Top Shelf: $37.00
+            </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              Flavor: $26.50
             </Typography>
         </Box>
       </Container>

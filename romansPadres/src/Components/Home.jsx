@@ -10,13 +10,11 @@ import redFish from "../images/redFish.jpg";
 import oneTaco from "../images/oneTaco.jpg";
 import sideAngle from "../images/sideAngle.jpg";
 import brisketBowl2 from "../images/brisketBowlNew.jpg";
-import brisketTacos from "../images/brisketTacos.jpg";
 import chickenTenders from "../images/chickenTenders.jpg";
 import cknWrap from "../images/cknWrap.jpg";
 import grilledVegies from "../images/grilledVegies.jpg";
 import shrimpBowl from "../images/shrimpBowl.jpg";
 import stkNachos from '../images/stkNachos.jpg';
-import stkTacos3 from '../images/stkTacos.jpg';
 import brisketBowl from '../images/brisketBowl.jpg';
 import limeRita from "../images/limeRita.jpg";
 import coronarita from "../images/coronarita.jpg";
@@ -52,7 +50,7 @@ const cardsData = [
   { title: 'Brisket Bowl', description: findDescription('stkDescription'), image: brisketBowl2 },
   { title: 'Steak Nachos', description: findDescription('papaNachosDesc'), image: stkNachos },
   { title: 'Happy Plate', description: findDescription('stkDescription'), image: happyPlate },
-  { title: 'Brisket Tacos', description: 'Description for Card 3', image: brisketTacos },
+  { title: 'Brisket Tacos', description: 'Description for Card 3', image: happyPlate },
   { title: 'Brisket Bowl', description: 'Description for Card 3', image: cknWrap },
   { title: 'Tacos al Carbon', description: findDescription('stkDescription'), image: alCarbon },
   { title: 'Ground Beef Taco', description: findDescription('oneTaco'), image: oneTaco },
@@ -63,7 +61,7 @@ const cardsData = [
   { title: 'Nutella Crepe', description: 'Description for Card 3', image: crepe },
   { title: 'Lime Margarita', description: 'Description for Card 3', image: limeRita },
   { title: 'Chicken Flautas', description: 'Description for Card 3', image: flautas },
-  { title: 'Steak Tacos', description: 'Description for Card 3', image: stkTacos3 },
+  { title: 'Steak Tacos', description: 'Description for Card 3', image: oneTaco },
   { title: 'Steak', description: 'Description for Card 3', image: stkFajitasImage },
 
 

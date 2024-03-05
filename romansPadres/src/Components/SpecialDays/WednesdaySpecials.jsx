@@ -47,7 +47,7 @@ return (
       }}>
       <Container maxWidth="sm">
         <Container maxWidth="sm">
-        <Box sx={{ alignItems: "center", bgcolor: '#597EE3', height: '7vh', borderRadius: '15px', overflow: 'hidden'}}>
+        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '7vh', borderRadius: '12px', m: 5 }}>
             <ColorTabs />    
         </Box>
       </Container>
@@ -91,15 +91,15 @@ return (
                 Pitcher Margarita Day
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              1/2 Price All Pitchers of Margaritas
+              Discounted Pitchers of Margaritas
             </Typography> 
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              House: $22.00
+              House: $25.50
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              Top Shelf: $34.00
+              Top Shelf: $37.00
             </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              Flavor: $24.00
+              Flavor: $26.50
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
               Happy Hour 3pm - 7pm
