@@ -65,10 +65,13 @@ return (
               Fajita Wednesday
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Dine-In Only
+            </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
               4pm - 9pm
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                        Half Off All Fajitas For One</Typography>
+                        Discount on All Fajitas For One</Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
               Chicken Fajitas ($11.50)
             </Typography>
@@ -80,7 +83,7 @@ return (
                 Mix Grill ($18.00)
                 </Typography>
                 <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                All fajitas come witha a setup plate on the side, as well as the meat, grilled onions, and fresh tortillas. 
+                All fajitas come with a a setup plate on the side, as well as the meat, grilled onions, and fresh tortillas. 
                 </Typography>
         </Box>
         <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '65vh', borderRadius: '12px', m: 2 }}>

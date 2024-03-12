@@ -60,6 +60,9 @@ return (
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Dine-In Only
+            </Typography>
             <br/>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
               Sampler Saturday
@@ -72,31 +75,32 @@ return (
                 Comes with one cheese enchilada, one ground beef enchilada, one ground beef taco, chicken flautas, guacamole, pico de gallo, and rice and beans
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Buffalo Chicken Nachos
+              Buffalo Chicken Nachos $14.00
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                Grilled fajita chicken on top of fresh tortilla chips, with jalepenos, house buffalo sauce, cilantro, and queso. 
+                Pizza Style Nachos with Fajita Chicken, pickled jalepenos, our house buffalo sauce, fresh cilantro, and queso. 
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Nutella Crepe
+              Nutella Crepe $8.50
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                ($8.50) Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
+              Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '45vh', borderRadius: '12px', m: 6 }}>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '55vh', borderRadius: '12px', m: 6 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-                Premium Margarita Day
+            Premium Margarita Day $14.99
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
               Discounted Premium Margaritas
             </Typography> 
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              Try our fresh premium margarita with Los Altos Tequila and Gran Marnier for only $15.00.
+            Try our 22 oz. Fresh Premium Margarita with Los Altos Tequila and Gran Marnier, fresh lime juice and agave. 
             </Typography>
+            
         </Box>
       </Container>
       </Box>

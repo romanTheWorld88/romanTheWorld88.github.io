@@ -84,11 +84,14 @@ export default function Home() {
             </Typography>
             
         </Grid>
-      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-65px' }}>
+      <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-55px' }}>
             <h2>225-313-3742</h2>
         </Grid>
-        <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '0px', fontFamily: "'Lemon', serif", marginTop: '-45px' }}>
+        <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-55px' }}>
             <h2>13424 LA-73</h2>
+        </Grid>
+        <Grid container spacing={0} justifyContent="center" sx={{ backgroundColor: '#597EE3', padding: '10px', fontFamily: "'Lemon', serif", marginTop: '-55px' }}>
+            <h2>Geismar, Louisiana</h2>
         </Grid>
       <Box sx={{
         display: "flex",

@@ -51,55 +51,64 @@ return (
             <ColorTabs />    
         </Box>
       </Container>
-        <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
+      <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: '#592EE3', height: '18vh', borderRadius: '12px', m: 5 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
               Friday Specials
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '120vh', borderRadius: '12px', m: -3 }}>
-            <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h2" align="center" gutterBottom>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '140vh', borderRadius: '12px', m: -3 }}>
+            <Typography sx={{fontFamily: "'Lemon', serif", marginTop: "-100px"}} variant="h2" align="center" gutterBottom>
               Food Specials
             </Typography>
             <br/>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Dine-In Only
+            </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
               Featured Friday
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
                         Try our new delicious menu items!</Typography>
+                        <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Mongolian Beef Tacos $14.99
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+                Three Beef Tacos with our fresh Mongolian Sauce, topped with green onions, red bellpeppers, and cliantro. Served with Rice, Bean Soup, and Loco Sauce. 
+            </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Buffalo Chicken Sandwich
+              Buffalo Chicken Sandwich $12.50
             </Typography><Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                ($11.50) Grilled fajita chicken sandwich with melted cheese on a toasted buttered bun, ask for any add-ons you like. Served with cajun fries. 
+               Grilled fajita chicken sandwich with melted cheese on a toasted buttered bun, ask for any add-ons you like. Served with cajun fries. 
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
                 + Bacon for $2.00
             </Typography>
-                <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Buffalo Chicken Bowl
-            </Typography>
-            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                Grilled fajita chicken with house buffalo sauce, on top of a bed of mexican rice. Spicy and delicious. 
-                $11.50
-            </Typography>
+                
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-              Nutella Crepe
+              Nutella Crepe $8.50
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-                ($8.50) Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
+                 Unlike any crepe you have had before.. nutella inside our handmade tortillas with ice cream, chocolate syrup, and powdered sugar. Must have.  
             </Typography>
         </Box>
-        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '45vh', borderRadius: '12px', m: 4 }}>
+        <Box sx={{flexDirection: "column", display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'white', height: '75vh', borderRadius: '12px', m: 4 }}>
             <Typography sx={{fontFamily: "'Lemon', serif"}} variant="h3" align="center" gutterBottom>
               Drink Specials
             </Typography>
             <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
-                Premium Margarita Day
+                Premium Margarita Day $14.99
             </Typography>
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
               Discounted Premium Margaritas
             </Typography> 
             <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
-              Try our fresh premium margarita with Los Altos Tequila and Gran Marnier for only $15.00.
+              Try our 22 oz. Fresh Premium Margarita with Los Altos Tequila and Gran Marnier, fresh lime juice and agave. 
+            </Typography>
+            <Typography sx={{fontFamily: "'Lilita One', sans-serif"}}variant="h3" align="center" gutterBottom>
+              Happy Hour 3pm - 7pm
+            </Typography>
+            <Typography sx={{fontFamily: "'Roboto Condensed', sans-serif"}} variant="h4" align="center" gutterBottom>
+              12 oz House or Strawberry Margarita for $4.00
             </Typography>
         </Box>
       </Container>
